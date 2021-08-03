@@ -20,8 +20,7 @@ app.get("/api/hello", (req, res) => {
 
 app.use("/api/users", userRouter);
 app.use("/api/questions", questionRouter);
-app.use("/messages", messageRouter);
-
+app.use("api/messages", messageRouter);
 
 app.use(globalErrorHandler);
 
